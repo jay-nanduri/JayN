@@ -11,4 +11,9 @@ public class APIController {
         return "Welcome Page reached";
     }
 
+    @GetMapping("/hello")
+    String welcomePage() {
+        return "Hello Page reached";
+    }
+
 }
