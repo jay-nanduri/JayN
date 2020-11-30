@@ -3,18 +3,27 @@ orbs:
   orb-tools: circleci/orb-tools@9
   cxflow: checkmarx-ts/cxflow@1.0.4
 
-workflows:
-  sast-scan:
-    jobs:
-      - cxflow/scan:
-          project: JayPTestSample
-          team: "\\CxServer\\SP\\Checkmarx\\JayN"
-          preset: "Checkmarx Express"
-          report-file: vulns.json
-          filters:
-            branches:
-              only:
-                - master
+  jobs:
+    cx-scan:
+      executor: cxflow/default
+      steps:
+        - checkout
+        - cxflow/scan:
+            team: "\\CxServer\\SP\\Checkmarx\\JayN"
+            preset: "Checkmarx Express"
+            report-file: checkmarx.json
+        - store_artifacts:
+            path: checkmarx.json
+
+  workflows:
+    version: 2
+    sast-scan:
+      jobs:
+        - cx-scan:
+            filters:
+              branches:
+                only: Feature/combine-all-scanners-configuration
+
 
 #      - orb-tools/lint
 #      - orb-tools/pack:
