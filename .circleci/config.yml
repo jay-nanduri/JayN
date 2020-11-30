@@ -7,7 +7,7 @@ orbs:
     version: 2
     sast-scan:
       jobs:
-        - cxflow/scan:
+        - scan:
             project: CxProject
             team: "\\CxServer\\SP\\Checkmarx\\JayN"
             preset: "Checkmarx Express"
