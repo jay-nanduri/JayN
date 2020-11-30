@@ -66,14 +66,7 @@ parameters:
     type: string
     default: "cx.json"
     description: "Report filename"
-  checkmarx-username:
-    type: string
-    default: ""
-    description: "Enter the Checkmarx SAST Username"
-  checkmarx-password:
-    type: string
-    default: ""
-    description: "Enter the Checkmarx SAST Password"
+
 steps:
   - run:
       name: Checkmarx Scan
@@ -90,8 +83,6 @@ steps:
         --checkmarx.version=<< parameters.version >> \
         --checkmarx.scope="<< parameters.auth-scopes >>" \
         --checkmarx.url="<< parameters.checkmarx-url >>/cxrestapi" \
-        --checkmarx.username="<< parameters.checkmarx-username>> \
-        --checkmarx.password="<< parameters.checkmarx-password>> \
         --checkmarx.portal-url="<< parameters.checkmarx-url >>/cxwebinterface/Portal/CxWebService.asmx" \
         --checkmarx.incremental=<< parameters.incremental >> \
         --checkmarx.scan-preset="<< parameters.preset >>" \

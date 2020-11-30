@@ -12,9 +12,6 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          checkmarx-url: "https://ast.dev.checkmarx-ts.com"
-          checkmarx-username: "jay.nanduri@checkmarx.com"
-          checkmarx-password: "aqNGC2?C7UKdfK_D"
 
 
 
