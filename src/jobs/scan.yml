@@ -70,6 +70,14 @@ parameters:
     type: string
     default: "cx.json"
     description: "Report filename"
+  checkmarx-username:
+    type: string
+    default: ""
+    description: "Enter the Checkmarx SAST Username"
+  checkmarx-password:
+    type: string
+    default: ""
+    description: "Enter the Checkmarx SAST Password"
 
 executor:
   name: default
@@ -87,6 +95,8 @@ steps:
       bug-tracker: << parameters.bug-tracker >>
       apply-filters: << parameters.apply-filters >>
       checkmarx-url: << parameters.checkmarx-url >>
+      checkmarx-username: << parameters.checkmarx-username >>
+      checkmarx-password: << parameters.checkmarx-password >>
       incremental: << parameters.incremental >>
       scan-configuration: << parameters.scan-configuration >>
       scan-timeout: << parameters.scan-timeout >>
