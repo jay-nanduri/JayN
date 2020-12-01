@@ -12,7 +12,7 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: sast
+          scanners: sca
 
 #      - orb-tools/lint
 #      - orb-tools/pack:
