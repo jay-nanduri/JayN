@@ -1,7 +1,7 @@
 version: 2.1
 orbs:
   orb-tools: circleci/orb-tools@9
-  cxflow: checkmarx-ts/cxflow@1.0.4
+  cxflow: jay-test/cxflow-scanners-orb@dev:alpha
 
 workflows:
   version: 2
