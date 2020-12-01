@@ -12,6 +12,7 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
+          scanners: sast
 
 
 
