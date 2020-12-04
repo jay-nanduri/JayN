@@ -13,7 +13,7 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: sca
+          SCANNERS: sca
           sca-username: cxflow
           sca-tenant: SCA-Champions
           sca-password: Cxflow@123
