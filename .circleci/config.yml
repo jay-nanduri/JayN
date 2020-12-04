@@ -18,7 +18,6 @@ workflows:
           sca-tenant: SCA-Champions
           sca-password: Cxflow@123
 
-
 #      - orb-tools/lint
 #      - orb-tools/pack:
 #          source-dir: src
