@@ -13,6 +13,7 @@ workflows:
           preset: "Checkmarx Express"
           report-file: vulns.json
           scanners: sca
+          sca-url: https://sca.scacheckmarx.com
           sca-username: cxflow
           sca-tenant: SCA-Champions
           sca-password: Cxflow@123
