@@ -16,9 +16,7 @@ workflows:
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
-          sca-username: cxflow
-          sca-tenant: SCA-Champions
-          sca-password: Cxflow@123
+
 
 
 #      - orb-tools/lint
