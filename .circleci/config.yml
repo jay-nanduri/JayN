@@ -7,7 +7,6 @@ workflows:
   version: 2
   sast-scan:
     jobs:
-      - cxflow/files
       - cxflow/scan:
           project: CxProject
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
@@ -17,6 +16,7 @@ workflows:
           sca-username: cxflow
           sca-tenant: SCA-Champions
           sca-password: Cxflow@123
+
 
 
 #      - orb-tools/lint
