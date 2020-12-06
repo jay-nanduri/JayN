@@ -12,10 +12,11 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: sast
+          scanners: ast
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
+          ast-apiUrl: http://ec2-3-249-214-110.eu-west-1.compute.amazonaws.com
 
 
 
