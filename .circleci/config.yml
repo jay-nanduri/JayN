@@ -18,6 +18,7 @@ workflows:
           sca-accessControlUrl: https://platform.checkmarx.net
           ast-apiUrl: http://ec2-3-249-214-110.eu-west-1.compute.amazonaws.com
           ast-preset: "Checkmarx Default"
+          ast-incremental: false
 
 
 
