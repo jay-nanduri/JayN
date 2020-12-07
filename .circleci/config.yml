@@ -9,7 +9,7 @@ workflows:
     jobs:
       - cxflow/scan:
           project: CxProject
-          team: "\\Demo\\CxFlow"
+          team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
           scanners: sast,sca
