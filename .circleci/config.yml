@@ -9,16 +9,21 @@ workflows:
     jobs:
       - cxflow/scan:
           project: CxProject
-          team: "\\CxServer\\SP\\Checkmarx\\JayN"
+          team: "\\Demo\\CxFlow"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: sast,sca
+          scanners: cxgo
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
           ast-apiUrl: http://ec2-3-249-214-110.eu-west-1.compute.amazonaws.com
           ast-preset: "Checkmarx Default"
           ast-incremental: false
+          cxgo-base-url: https://api.checkmarx.net
+          cxgo-portal-url: https://cloud.checkmarx.net
+          cxgo-multi-tenant: true
+          cxgo-configuraiton: "Default Configuration"
+          cxgo-scan-preset: 1,2,3,4,5,9
 
 
 
