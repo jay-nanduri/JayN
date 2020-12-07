@@ -22,7 +22,7 @@ workflows:
           cxgo-base-url: https://api.checkmarx.net
           cxgo-portal-url: https://cloud.checkmarx.net
           cxgo-multi-tenant: true
-          cxgo-configuraiton: "Default Configuration"
+          cxgo-configuration: "Default Configuration"
           cxgo-scan-preset: 1,2,3,4,5,9
 
 
