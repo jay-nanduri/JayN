@@ -16,7 +16,7 @@ workflows:
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
-          ast-apiUrl: "http://cx-ast-testing.dev.checkmarx-ts.com/"
+          ast-apiUrl: "http://cx-ast-testing.dev.checkmarx-ts.com"
           ast-preset: "Checkmarx Default"
           ast-incremental: false
           cxgo-base-url: https://api.checkmarx.net
