@@ -24,7 +24,7 @@ workflows:
           cxgo-multi-tenant: true
           cxgo-configuration: "Default Configuration"
           cxgo-scan-preset: 1,2,3,4,5,9
-          params: debug
+          params: "--debug"
 
 
 #      - orb-tools/lint
