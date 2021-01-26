@@ -1,7 +1,7 @@
 version: 2.1
 orbs:
   orb-tools: circleci/orb-tools@9
-  cxflow: jay-test/cxflow-scanners-orb@dev:alpha
+  cxflow: checkmarx-ts/cxflow@1.0.5
 
 workflows:
   version: 2
@@ -12,7 +12,7 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: ast
+          scanners: sast
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
