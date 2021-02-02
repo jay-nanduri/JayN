@@ -12,18 +12,10 @@ workflows:
           team: "\\CxServer\\SP\\Checkmarx\\JayN"
           preset: "Checkmarx Express"
           report-file: vulns.json
-          scanners: sast
+          scanners: sca
           sca-appUrl: https://sca.scacheckmarx.com
           sca-apiUrl: https://api.scacheckmarx.com
           sca-accessControlUrl: https://platform.checkmarx.net
-          ast-apiUrl: "http://cx-ast-testing.dev.checkmarx-ts.com"
-          ast-preset: "Checkmarx Default"
-          ast-incremental: false
-          cxgo-base-url: https://api.checkmarx.net
-          cxgo-portal-url: https://cloud.checkmarx.net
-          cxgo-multi-tenant: true
-          cxgo-configuration: "Default Configuration"
-          cxgo-scan-preset: 1,2,3,4,5,9
           params: "--debug"
 
 
